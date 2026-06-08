@@ -8,4 +8,6 @@ tqdm
 pyyaml
 requests
 torch
-gymnasium stable-baselines3 sb3-contrib
+gymnasium
+stable-baselines3
+sb3-contrib

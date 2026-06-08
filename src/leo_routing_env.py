@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import json
 from pathlib import Path
 from typing import Any
@@ -50,18 +52,18 @@ OBS_FEATURE_NAMES = [
     "od_demand_mbps",
     "is_zero_hop",
     "affected_edge_count",
+    "added_load_mbps",
+    "added_load_edge_sum",
     "pre_mlu",
-    "post_mlu",
-    "delta_mlu",
     "pre_congestion_count",
-    "post_congestion_count",
-    "delta_congestion_count",
+    "pre_congestion_ratio",
     "pre_avg_utilization",
-    "post_avg_utilization",
+    "pre_total_load_mbps",
     "path_delay_ms_sum",
+    "path_pre_load_sum",
     "path_pre_util_max",
-    "path_post_util_max",
-    "path_new_congestion_count",
+    "path_pre_util_mean",
+    "path_pre_congestion_count",
     "path_pred_util_max",
     "path_pred_util_mean",
     "path_cong_prob_max",
@@ -70,9 +72,9 @@ OBS_FEATURE_NAMES = [
     "path_risk_score_mean",
     "path_risk_score_sum",
     "path_congestion_risk_score_max",
+    "path_congestion_risk_score_mean",
     "path_util_uncertainty_mean",
     "path_util_uncertainty_max",
-    "action_cost",
 ]
 
 UNNORMALIZED_FEATURES = {"is_zero_hop"}
