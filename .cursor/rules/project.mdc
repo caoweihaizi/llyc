@@ -1,0 +1,15 @@
+---
+description: Long-term project rules for the LEO flow prediction experiment
+alwaysApply: true
+---
+
+1. Use Python 3.10.
+2. Do not use notebooks. All code must be reproducible `.py` scripts.
+3. All scripts must support `argparse`.
+4. Use `pathlib` for path management.
+5. Fix all random processes with `seed=42`.
+6. Save intermediate results to avoid repeated computation.
+7. Split training, validation, and test sets in chronological order. Do not shuffle randomly.
+8. Abilene is not satellite data. It is only the real ground OD traffic matrix used to drive LEO simulation.
+9. The 12 Abilene PoP nodes are ground gateways, not ordinary user terminals.
+10. The current stage only covers traffic prediction, not reinforcement learning.

@@ -1,0 +1,10 @@
+seed: 42
+congestion_threshold: 0.8
+capacity_mbps: 1000
+seq_len: 12
+topo_name: topo144
+num_planes: 8
+sats_per_plane: 18
+altitude_km: 550
+inclination_deg: 53
+min_elevation_deg: 15
