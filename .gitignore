@@ -19,6 +19,9 @@ env/
 .vscode/
 .idea/
 
+# Project documentation
+docs/
+
 # OS metadata
 .DS_Store
 Thumbs.db
